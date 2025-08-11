@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carbon Gifter — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand">
+      <img src="img/leaf.svg" alt="leaf" class="logo"> CARBON GIFTER
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="transaction.html" class="nav-link">Offsets</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="retire.html" class="nav-link">Retire</a>
+      <a href="login.html" class="nav-link accent">Login</a>
+    </nav>
+  </header>
+
+  <main class="container hero">
+    <section class="hero-left card">
+      <h1>Gift Carbon Offsets, Grow a Greener Tomorrow</h1>
+      <p class="lead">Support nature with every gift.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="transaction.html">Start Gifting 🌱</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+
+      <div id="how" class="how card small">
+        <div class="step"><strong>1.</strong> Choose a Project (Trees / Solar / Recycling)</div>
+        <div class="step"><strong>2.</strong> Fill gift details & pay</div>
+        <div class="step"><strong>3.</strong> Send & celebrate — recipient gets an eco-certificate</div>
+      </div>
+
+      <section class="featured">
+        <article class="feature card">
+          <h3>Plant Trees</h3>
+          <p>Contribute to verified reforestation projects.</p>
+          <a class="btn small" href="transaction.html?project=trees">Gift Now</a>
+        </article>
+        <article class="feature card">
+          <h3>Solar Credits</h3>
+          <p>Support renewable energy installations.</p>
+          <a class="btn small" href="transaction.html?project=solar">Gift Now</a>
+        </article>
+        <article class="feature card">
+          <h3>Plastic Recycling</h3>
+          <p>Fund waste-to-resource programs.</p>
+          <a class="btn small" href="transaction.html?project=recycling">Gift Now</a>
+        </article>
+      </section>
+    </section>
+
+    <aside class="hero-right card">
+      <img src="img/earth-glow.png" alt="Earth" class="hero-art" />
+      <div class="simulator">
+        <label>Offset Simulator — enter credits</label>
+        <input id="simAmount" type="number" min="1" value="1" />
+        <button id="simulateBtn" class="btn">Simulate Offset</button>
+        <div id="simMessage" class="muted">Your tree is growing... 🌱</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number" id="totalTonnes">25,000</div>
+          <div class="stat-label">Tonnes Offset</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="totalTrees">150,000</div>
+          <div class="stat-label">Trees Planted</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="totalGifts">10,000</div>
+          <div class="stat-label">Gifts Given</div>
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <strong>Carbon Gifter</strong> — Gift a greener tomorrow</div>
+    <div class="footer-links">
+      <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Support</a>
+      <span class="social"> · <a href="#">Twitter</a> · <a href="#">Instagram</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

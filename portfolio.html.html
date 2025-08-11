@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio — Carbon Gifter</title><link rel="stylesheet" href="style.css" /></head>
+<body class="dark">
+  <header class="site-header"><div class="brand"><img src="img/leaf.svg" class="logo"> CARBON GIFTER</div><nav class="nav"><a href="index.html">Home</a><a href="transaction.html">Offsets</a></nav></header>
+
+  <main class="container">
+    <aside class="sidebar card">
+      <h3 id="userName">Guest</h3>
+      <div class="mini-stat">Total Credits: <strong id="userCredits">0</strong></div>
+      <div class="mini-stat">CO₂ Offset: <strong id="userCO2">0</strong> kg</div>
+      <a class="btn small" href="retire.html">Retire Credits</a>
+    </aside>
+
+    <section class="dashboard card">
+      <h2>Transaction History</h2>
+      <table id="historyTable">
+        <thead><tr><th>Date</th><th>Project</th><th>Credits</th><th>Recipient</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Retired Credits</h3>
+      <div id="retiredList" class="muted">No retired credits yet.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

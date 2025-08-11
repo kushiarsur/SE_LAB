@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Start Gifting — Carbon Gifter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand"><img src="img/leaf.svg" class="logo"> CARBON GIFTER</div>
+    <nav class="nav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="login.html" class="accent">Login</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <h2>Complete Your Gift</h2>
+      <label>Choose project</label>
+      <select id="projectSelect">
+        <option value="trees">Plant Trees</option>
+        <option value="solar">Solar Panel Credits</option>
+        <option value="recycling">Plastic Recycling</option>
+      </select>
+
+      <label>Your name</label>
+      <input id="giverName" placeholder="Your name" />
+
+      <label>Recipient name</label>
+      <input id="recipientName" placeholder="Recipient name" />
+
+      <label>Number of credits</label>
+      <input id="credits" type="number" min="1" value="1" />
+
+      <label>Personal message (optional)</label>
+      <textarea id="message" rows="3" placeholder="A sweet note..."></textarea>
+
+      <div class="actions">
+        <button id="completeBtn" class="btn primary">Complete Transaction</button>
+        <a class="btn ghost" href="index.html">Cancel</a>
+      </div>
+
+      <div id="confirmBox" class="confirm muted" style="display:none;"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

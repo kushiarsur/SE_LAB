@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Retire Credits — Carbon Gifter</title><link rel="stylesheet" href="style.css" /></head>
+<body class="dark">
+  <header class="site-header"><div class="brand"><img src="img/leaf.svg" class="logo"> CARBON GIFTER</div></header>
+
+  <main class="container">
+    <section class="card form-card">
+      <h2>Retire Credits</h2>
+      <label>Available credits</label>
+      <select id="ownedCredits"></select>
+
+      <label>Credits to retire</label>
+      <input id="retireCount" type="number" min="1" value="1" />
+
+      <div class="actions">
+        <button id="retireNow" class="btn primary">Retire Now</button>
+        <a href="portfolio.html" class="btn ghost">Back</a>
+      </div>
+
+      <div id="retireMsg" class="muted" style="display:none;"></div>
+
+      <div id="certificate" class="card" style="display:none;margin-top:12px;">
+        <h4>Digital Certificate</h4>
+        <p id="certText"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
